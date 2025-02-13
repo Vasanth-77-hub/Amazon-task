@@ -35,5 +35,15 @@ function changeSlide() {
         changeSlide();
     })
 
+    const ScrollContainer = document. querySelectorAll('.products');
+    for (const item of ScrollContainer) {
+        item.addEventListener('Wheel' , (evt)=>{
+            evt.preventDefault();
+            item.scrollLeft += evt.deltaY;
+            });
+            
+        }
+    
+
 
    
